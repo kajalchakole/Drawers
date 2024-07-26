@@ -1,11 +1,18 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-function UserScreen() {
+
+function UserScreen({ navigation }) {
+
+  function openPressHandler() {
+   
+  }
+
   return (
     <View style={styles.rootContainer}>
       <Text>
         This is the <Text style={styles.highlight}>"User"</Text> screen!
       </Text>
+      <Button title='Open Drawer' onPress={openPressHandler}/>
     </View>
   );
 }
